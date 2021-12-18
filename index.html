@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./js/render.js" defer></script>
+		<script src="./js/words.js" defer></script>
+		<script src="./js/main.js" defer></script>
+		<title>HANGMAN</title>
+	</head>
+	<body>
+		<header>
+			<p class="hide"><a href="index.html">Press here to go again!</a></p>
+		</header>
+		<main>
+			<h1>HANGMAN</h1>
+			<figure>
+				<svg
+					width="385"
+					height="313"
+					viewBox="0 0 385 313"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<line
+						id="livesLeft10"
+						x1="0.99789"
+						y1="307.972"
+						x2="385"
+						y2="307.972"
+						stroke="transparent"
+						stroke-width="10"
+					/>
+					<line
+						id="livesLeft9"
+						x1="66"
+						y1="304"
+						x2="66"
+						stroke="transparent"
+						stroke-width="10"
+					/>
+					<line
+						id="livesLeft8"
+						x1="289.002"
+						y1="5"
+						x2="71"
+						y2="5"
+						stroke="transparent"
+						stroke-width="10"
+					/>
+					<line
+						id="livesLeft7"
+						x1="156.17"
+						y1="4.05833"
+						x2="66.6142"
+						y2="93.6143"
+						stroke="transparent"
+						stroke-width="10"
+					/>
+					<line
+						id="livesLeft4"
+						x1="273"
+						y1="220"
+						x2="273"
+						y2="130"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<line
+						id="livesLeft0"
+						x1="320.586"
+						y1="266.414"
+						x2="273.083"
+						y2="218.912"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<line
+						id="livesLeft1"
+						x1="273.414"
+						y1="218.414"
+						x2="225.912"
+						y2="265.917"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<line
+						id="livesLeft2"
+						x1="315.585"
+						y1="175.938"
+						x2="273.222"
+						y2="156.184"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<line
+						id="livesLeft3"
+						x1="273.275"
+						y1="156.184"
+						x2="230.913"
+						y2="175.938"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<line
+						id="livesLeft6"
+						x1="272.5"
+						y1="61.0042"
+						x2="272.5"
+						y2="0.995834"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+					<circle
+						id="livesLeft5"
+						cx="273"
+						cy="95"
+						r="33"
+						stroke="transparent"
+						stroke-width="4"
+					/>
+				</svg>
+				<div class="text-container">
+					<a href="index.html">Start over</a>
+					<p id="livesLeft">Lives left: -</p>
+				</div>
+			</figure>
+			<div id="wordToBeFilledIn"></div>
+			<div id="keyboard"></div>
+		</main>
+		<section class="modal">
+			<div class="modal-content">
+				<h2>HANGMAN</h2>
+				<div class="input-group">
+					<label for="livesInput"
+						>Choose number of lives (1-11):
+					</label>
+					<input
+						type="number"
+						id="livesInput"
+						title="Enter a number between 1 and 11"
+						min="1"
+						max="11"
+						value="7"
+						autofocus
+					/>
+				</div>
+				<button class="modal-button">START PLAYING</button>
+			</div>
+		</section>
+	</body>
+</html>
